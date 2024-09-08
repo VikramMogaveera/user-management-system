@@ -7,6 +7,7 @@ Instruction to Run the project with docker
       docker build -t user-journal-service:latest .
 
 3. Run Docker compose
+
    From the root directory where your docker-compose.yml file is located, run:
 
       docker-compose up --build

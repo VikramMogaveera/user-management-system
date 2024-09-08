@@ -2,9 +2,10 @@ Instruction to Run the project with docker
 1. Build the docker images
    Navigate to each microservices(user-service and user-journal-service) and build the docker images
        docker build -t user-service:latest .
-       docker build -t user-journal-service:latest .
 
-2. Run Docker compose
+      docker build -t user-journal-service:latest .
+
+3. Run Docker compose
    From the root directory where your docker-compose.yml file is located, run:
        docker-compose up --build
 

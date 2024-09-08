@@ -22,7 +22,7 @@ public class UserEventController {
 
     private UserJournalService userJournalService;
 
-    @Operation(summary = "Get All User Journal")
+    @Operation(summary = "Get All User Journal(admin permission required)")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "OK")
     })

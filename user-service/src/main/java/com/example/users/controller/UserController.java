@@ -45,7 +45,7 @@ public class UserController {
         return ResponseEntity.ok(user);
     }
 
-    @Operation(summary = "Get All User")
+    @Operation(summary = "Get All User(admin permission required)")
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping
     public ResponseEntity<List<UserDto>> getAllUsers() {
@@ -72,7 +72,7 @@ public class UserController {
         return ResponseEntity.ok(user);
     }
 
-    @Operation(summary = "Delete a User")
+    @Operation(summary = "Delete a User By Admin")
     @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable Long id) {
